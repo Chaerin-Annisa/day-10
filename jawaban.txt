@@ -26,7 +26,7 @@ PRIMARY KEY('id')
 ALTER TABLE 'items' ADD CONTSRAINT 'FK_items_category_id' FOREIGN KEY ('category_id');
 
 3.
-INSERT INTO 'users' ('name','email')VALUES('John Doe','john@doe.com'),('Jane Doe'),(jane@doe.com'),
+INSERT INTO 'users' ('name','email')VALUES('John Doe','john@doe.com'),('Jane Doe','jane@doe.com'),
 INSERT INTO 'categories' ('name')VALUES('gadget','cloth','men','women','branded'),
 INSERT INTO 'items' ('name','description')VALUES('sumsang b50','hape keren dari merk sumsang'),('Uniklooh','baju keren dari brand ternama'),('IMHO watch','jam tangan anak yang jujur banget');
 
