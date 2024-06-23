@@ -1,0 +1,41 @@
+1.CREATE DATABASE myshop;
+
+2.CREATE TABLE 'users'(
+'id' INTEGER AUTO_INCREMENT,
+'name' VARCHAR(255),
+'email' VARCHAR(255),
+'password' VARCHAR(255),
+PRIMARY KEY ('id')
+);
+
+CREATE TABLE 'categories'(
+'id' INTEGER AUTO_INCREMENT,
+'name' VARCHAR(255),
+PRIMARY KEY ('id')
+);
+
+CREATE TABLE 'items'(
+'id' INTEGER AUTO_INCREMENT,
+'name' VARCHAR(255)
+'description' VARCHAR(255),
+'price' INTEGER,
+'stock' INTEGER,
+'category_id' INTEGER
+PRIMARY KEY('id')
+);
+ALTER TABLE 'items' ADD CONTSRAINT 'FK_items_category_id' FOREIGN KEY ('category_id');
+
+3.
+INSERT INTO 'users' ('name','email')VALUES('John Doe','john@doe.com'),('Jane Doe'),(jane@doe.com'),
+INSERT INTO 'categories' ('name')VALUES('gadget','cloth','men','women','branded'),
+INSERT INTO 'items' ('name','description')VALUES('sumsang b50','hape keren dari merk sumsang'),('Uniklooh','baju keren dari brand ternama'),('IMHO watch','jam tangan anak yang jujur banget');
+
+4.
+SELECT id,name,email FROM USERS;
+SELECT price->1000000 FROM ITEMS;
+SELECT name FROM items WHERE watch;
+SELECT * FROM categories INNER items JOIN items ON items.name=categories.name;
+
+5.
+UPDATE items WHERE name = 'sumsangb50' SET price = 25000000; 
+ 
